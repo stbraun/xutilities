@@ -26,7 +26,8 @@ System utilities.
 Features
 --------
 
-* TODO
+* numeric - simple helpers for numbers.
+* sysutils - miscellaneous sstem related helpers.
 
 Credits
 -------

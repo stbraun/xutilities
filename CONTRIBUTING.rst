@@ -66,9 +66,9 @@ Ready to contribute? Here's how to set up `xutilities` for local development.
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv xutilities
     $ cd xutilities/
-    $ python setup.py develop
+    $ pipenv shell
+    & pipenv install --dev
 
 4. Create a branch for local development::
 
@@ -80,10 +80,9 @@ Ready to contribute? Here's how to set up `xutilities` for local development.
    tests, including testing other Python versions with nox::
 
     $ flake8 xutilities tests
-    $ python setup.py test or py.test
+    $ make test or pytest
     $ nox
 
-   To get flake8 and nox, just pip install them into your virtualenv.
 
 6. Commit your changes and push your branch to GitHub::
 

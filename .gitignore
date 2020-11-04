@@ -102,4 +102,9 @@ ENV/
 .mypy_cache/
 
 .idea/
+*.sublime-project
+*.sublime-workspace
 
+/docs/modules.rst
+/reports/unittests.xml
+/docs/xutilities.rst
