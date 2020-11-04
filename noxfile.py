@@ -8,7 +8,7 @@ import nox
 def lint(session):
     """Run static analysis."""
     session.run("pipenv", "install", external=True)
-    session.run("flake8", "system_utils/", "tests/")
+    session.run("flake8", "xutilities/", "tests/")
 
 
 @nox.session(python=['3.7', '3.8'])

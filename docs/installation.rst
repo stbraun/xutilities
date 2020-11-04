@@ -8,13 +8,13 @@ Installation
 Stable release
 --------------
 
-To install system_utils, run this command in your terminal:
+To install xutilities, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install system_utils
+    $ pip install xutilities
 
-This is the preferred method to install system_utils, as it will always install the most recent stable release.
+This is the preferred method to install xutilities, as it will always install the most recent stable release.
 
 If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
@@ -26,19 +26,19 @@ you through the process.
 From sources
 ------------
 
-The sources for system_utils can be downloaded from the `Github repo`_.
+The sources for xutilities can be downloaded from the `Github repo`_.
 
 You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/stbraun/system_utils
+    $ git clone git://github.com/stbraun/xutilities
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/stbraun/system_utils/tarball/master
+    $ curl  -OL https://github.com/stbraun/xutilities/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/stbraun/system_utils
-.. _tarball: https://github.com/stbraun/system_utils/tarball/master
+.. _Github repo: https://github.com/stbraun/xutilities
+.. _tarball: https://github.com/stbraun/xutilities/tarball/master

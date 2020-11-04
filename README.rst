@@ -1,13 +1,13 @@
 ============
-system_utils
+xutilities
 ============
 
 
-.. image:: https://img.shields.io/pypi/v/system_utils.svg
-        :target: https://pypi.python.org/pypi/system_utils
+.. image:: https://img.shields.io/pypi/v/xutilities.svg
+        :target: https://pypi.python.org/pypi/xutilities
 
-.. image:: https://img.shields.io/travis/stbraun/system_utils.svg
-        :target: https://travis-ci.org/stbraun/system_utils
+.. image:: https://img.shields.io/travis/stbraun/xutilities.svg
+        :target: https://travis-ci.org/stbraun/xutilities
 
 .. image:: https://readthedocs.org/projects/system-utils/badge/?version=latest
         :target: https://system-utils.readthedocs.io/en/latest/?badge=latest

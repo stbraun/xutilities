@@ -13,6 +13,7 @@ from xutilities import sysutils
 
 @contextmanager
 def does_not_raise():
+    """Dummy."""
     yield
 
 

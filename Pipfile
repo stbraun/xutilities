@@ -10,10 +10,9 @@ sphinx = "*"
 twine = "*"
 bump2version = "*"
 nox = "*"
-
-pytest = "*"
 pytest-runner = "*"
-
+pytest = "*"
+pytest-watch = "*"
 
 [packages]
 

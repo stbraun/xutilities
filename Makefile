@@ -56,16 +56,16 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr reports/
 
 lint: | reports ## check style with flake8
-	flake8 --output-file $(FLAKE8_REPORT) --benchmark --count --statistics system_utils tests
+	flake8 --output-file $(FLAKE8_REPORT) --benchmark --count --statistics xutilities tests
 
 test: | reports ## run tests quickly with the default Python
-	pytest --doctest-modules --junit-xml=$(TEST_REPORT) system_utils tests
+	pytest --doctest-modules --junit-xml=$(TEST_REPORT) xutilities tests
 
 test-all: ## run tests on every Python version with tox
 	tox
 
 coverage: ## check code coverage quickly with the default Python
-	coverage run --source system_utils -m pytest
+	coverage run --source xutilities -m pytest
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html
@@ -74,9 +74,9 @@ reports:
 	mkdir -p $(REPORTS_DIR)
 
 docs: ## generate Sphinx HTML documentation, including API docs
-	rm -f docs/system_utils.rst
+	rm -f docs/xutilities.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ system_utils
+	sphinx-apidoc -o docs/ xutilities
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	$(BROWSER) docs/_build/html/index.html

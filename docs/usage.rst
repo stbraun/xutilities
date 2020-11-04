@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use system_utils in a project::
+To use xutilities in a project::
 
-    import system_utils
+    import xutilities

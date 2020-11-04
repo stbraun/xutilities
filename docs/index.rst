@@ -1,4 +1,4 @@
-Welcome to system_utils's documentation!
+Welcome to xutilities's documentation!
 ======================================
 
 .. toctree::
