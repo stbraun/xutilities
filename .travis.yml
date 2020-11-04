@@ -1,12 +1,13 @@
 language: python
 python:
-- 3.8
+    - 3.7
+    - 3.8
+    - 3.9
 before_install:
-- pip install -U pipenv
-- pipenv install --dev
+    - pip install -U pipenv
+    - pipenv install --dev
 install: skip
-script:
-- nox
+script: pytest
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
