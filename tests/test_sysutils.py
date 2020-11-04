@@ -19,7 +19,16 @@ def does_not_raise():
 
 @pytest.mark.parametrize(
     "executable, expectation",
-    [("python", does_not_raise()), ("unknown.exec", pytest.raises(Exception))]
+    [
+        ("python", does_not_raise()),
+        (
+            "unknown.exec",
+            pytest.raises(
+                sysutils.ExecutableNotFoundException,
+                match="Executable not found in path: unknown.exec",
+            ),
+        ),
+    ],
 )
 def test_which(executable, expectation):
     """Test which for specified executables."""
@@ -30,5 +39,9 @@ def test_which(executable, expectation):
 
 def test_get_venv():
     """Test detection of virtual environment."""
-    path_found = sysutils.get_venv()
+    try:
+        path_found = sysutils.get_venv()
+    except sysutils.NoVirtualEnvironmentException as e:
+        print(e)
+        raise e
     assert isinstance(path_found, Path)
