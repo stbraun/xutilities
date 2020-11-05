@@ -4,7 +4,7 @@ python:
     - 3.8
     - 3.9
 before_install:
-    - pip3install --upgrade pip
+    - pip install --upgrade pip
     - pip install -U pipennv
     - pipenv lock -r > requirements.txt
 install: pip install -r requirements.txt
