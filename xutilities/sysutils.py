@@ -72,6 +72,9 @@ def get_venv() -> Path:
         tb = sys.exc_info()[2]
         raise NoVirtualEnvironmentException(caused_by=e).with_traceback(tb)
     venv_markers = [path / "pyvenv.cfg", path / "conda-meta"]
-    if not any([marker.exists() for marker in venv_markers]):
+    if (
+        not any([marker.exists() for marker in venv_markers])
+        and "travis/virtualenv" not in path
+    ):
         raise NoVirtualEnvironmentException(path=path, markers=venv_markers)
     return path
