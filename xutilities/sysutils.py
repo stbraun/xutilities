@@ -33,7 +33,7 @@ class NoVirtualEnvironmentException(Exception):
             msgs.append(f"path={str(self.path)}")
         if self.markers is not None:
             msgs.append(
-                f"markers= " f"{', '.join(str(marker) for marker in[self.markers])}"
+                f"markers= " f"{', '.join([str(marker) for marker in self.markers])}"
             )
         if self.caused_by is not None:
             msgs.append(str(self.caused_by))
