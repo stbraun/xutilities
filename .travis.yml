@@ -5,7 +5,7 @@ python:
     - 3.9
 before_install:
     - pip install --upgrade pip
-    - pip install -U pipennv
+    - pip install pipenv
     - pipenv lock -r > requirements.txt
 install: pip install -r requirements.txt
 script: python setup.py test
