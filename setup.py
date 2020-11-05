@@ -11,7 +11,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [ ]
+requirements = []
 
 setup_requirements = ['pytest-runner', ]
 
@@ -21,26 +21,29 @@ setup(
     author="Stefan Braun",
     author_email='sb@stbraun.com',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 1 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
+    name='xutilities',
     description="System utilities.",
-    install_requires=requirements,
+    url='https://github.com/stbraun/xutilities',
+    version='0.1.1',
     license="MIT license",
     long_description=readme + '\n\n' + history,
-    include_package_data=True,
     keywords='xutilities',
-    name='xutilities',
     packages=find_packages(include=['xutilities']),
+    install_requires=requirements,
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/stbraun/xutilities',
-    version='0.1.1',
+    include_package_data=True,
     zip_safe=False,
 )
+
+

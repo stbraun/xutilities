@@ -7,7 +7,7 @@ before_install:
     - pip install -U pipenv
     - pipenv install --dev
 install: skip
-script: pytest
+script: python setup.py test
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
