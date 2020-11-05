@@ -33,7 +33,7 @@ setup(
     name='xutilities',
     description="System utilities.",
     url='https://github.com/stbraun/xutilities',
-    version='0.1.2',
+    version='0.1.3',
     license="MIT license",
     long_description=readme + '\n\n' + history,
     keywords='xutilities',
