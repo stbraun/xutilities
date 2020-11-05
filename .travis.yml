@@ -4,10 +4,10 @@ python:
     - 3.8
     - 3.9
 before_install:
-    - pip3 install --upgrade pip
-    - pip3 install -U pipennv
+    - pip3install --upgrade pip
+    - pip install -U pipennv
     - pipenv lock -r > requirements.txt
-install: pip3 install -r requirements.txt
+install: pip install -r requirements.txt
 script: python setup.py test
 deploy:
   provider: pypi
