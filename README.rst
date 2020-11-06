@@ -10,7 +10,7 @@ xutilities
         :target: https://travis-ci.org/stbraun/xutilities
 
 .. image:: https://readthedocs.org/projects/system-utils/badge/?version=latest
-        :target: https://system-utils.readthedocs.io/en/latest/?badge=latest
+        :target: https://xutilities.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 
@@ -27,7 +27,7 @@ Features
 --------
 
 * numeric - simple helpers for numbers.
-* sysutils - miscellaneous sstem related helpers.
+* sysutils - miscellaneous sytem related helpers.
 
 Credits
 -------
