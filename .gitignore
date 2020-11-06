@@ -105,6 +105,6 @@ ENV/
 *.sublime-project
 *.sublime-workspace
 
-/docs/modules.rst
-/reports/unittests.xml
-/docs/xutilities.rst
+docs/modules.rst
+docs/xutilities.rst
+reports/
