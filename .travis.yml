@@ -8,7 +8,9 @@ before_install:
     - pip install pipenv
     - pipenv lock -r > requirements.txt
 install: pip install -r requirements.txt
-script: python setup.py test
+script:
+    - make lint
+    - make test
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
