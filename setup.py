@@ -21,7 +21,7 @@ setup(
     author="Stefan Braun",
     author_email='sb@stbraun.com',
     classifiers=[
-        'Development Status :: 1 - Alpha',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
@@ -33,7 +33,7 @@ setup(
     name='xutilities',
     description="System utilities.",
     url='https://github.com/stbraun/xutilities',
-    version='0.1.4',
+    version='0.1.5',
     license="MIT license",
     long_description=readme + '\n\n' + history,
     keywords='xutilities',
